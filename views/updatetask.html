@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Update Task</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Update Task</h1>
+    <a href='/'>Home</a>
+    <a href='/newtask'>Add New Task</a>
+    <a href='/listtasks'>List All Tasks</a>
+    <a href='/deletetask'>Delete Task</a><br /><br />
+   
+
+    <form action='/updatetaskinfo' method='POST'>
+        <label for='taskid'>Task ID</label>
+        <input type='text' name='taskid' id='taskid' /><br />
+        <label for='taskstatus'>Task Status</label>
+        <input type='radio' name='taskstatus' id='taskstatus' value="In Progress">In Progress
+        <input type='radio' name='taskstatus' id='taskstatus' value="Completed">Completed<br>
+        <button type='submit'>Submit</button>
+    </form>
+</body>
+
+</html>

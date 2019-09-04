@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Delete Task</h1>
+    <a href='/'>Home</a>
+    <a href='/newtask'>Add New Task</a>
+    <a href='/listtasks'>List All Tasks</a>
+    <a href='/updatetask'>Update Task</a><br /><br />
+
+    <form action='/deletetaskinfo' method='POST'>
+    <label for='taskid'>Task ID</label>
+    <input type='text' name='taskid' id='taskid' /><br />
+    <button type='submit'>Submit</button>
+    </form>
+
+    <br>
+
+    <form action='/deletealltasks' method='POST'>
+    <label>Delete All Tasks</label><br />
+    <button type='submit'>Submit</button>
+    </form>
+
+</body>
+
+</html>

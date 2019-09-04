@@ -1,0 +1,13 @@
+table, th, td {
+    border: 0.1px solid black;
+}
+
+img {
+    width: 5%;
+    height: 5%;
+}
+
+body {
+    background-color: #a8a8a8;
+}
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Add New Task</h1>
+    <a href='/'>Home</a>
+    <a href='/listtasks'>List All Tasks</a>
+    <a href='/deletetask'>Delete Task</a>
+    <a href='/updatetask'>Update Task</a><br /><br />
+
+    <form action='/addTaskInfo' method='POST'>
+        <label for='taskname'>Task Name</label>
+        <input type='text' name='taskname' id='taskname' /><br />
+        <label for='assignto'>Assign to</label>
+        <input type='text' name='assignto' id='assignto' /><br />
+        <label for='taskduedate'>Task Due Date</label>
+        <input type='text' name='taskduedate' id='taskduedate' /><br />
+        <label for='taskstatus'>Task Status</label>
+        <input type="radio" name='taskstatus' id='taskstatus' value="In Progress">In Progress
+        <input type="radio" name='taskstatus' id='taskstatus' value="Completed">Completed<br>
+        <label for='taskdesc'>Task Description</label>
+        <input type='text' name='taskdesc' id='taskdesc' /><br />
+        <button type='submit'>Submit</button>
+    </form>
+</body>
+
+</html>
